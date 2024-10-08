@@ -1,0 +1,154 @@
+
+#toggleState{
+	margin-left:auto;
+	margin-top:40px;
+	
+	
+}
+/* Hamburger Menu */
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+.wrapper {
+            display: flex;
+            justify-content: flex-end; /* Aligns to the right */
+            width: 100%;
+            padding: 20px; /* Adds space from the edge */
+			margin-top:40px;
+        }
+		
+		
+		  /* Toggle Switch Styles */
+.toggle-container {
+            position: relative;
+            width: 60px;
+            height: 30px;
+        }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.about {
+		margin:12px auto 12px auto;
+		
+}
+#testimonials{
+    text-align: left;
+}
+
+
+.toggleswitch{margin-left:78%;
+				margin-top:-7%;
+				
+				
+				}
+
+.testimonialsBorder{
+			top: 50%;
+			left: 50%;
+			border:0.5px solid rgba(0, 0, 0, 0.1);
+			margin-bottom:10px;
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    padding: 10px 16px 10px 16px;
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.buttons {
+  ;
+}
+
+.btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #357ABD;
+}
+
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f9;
+}
+
+.toggle-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 4;
+}
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+#sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+#sidebar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}

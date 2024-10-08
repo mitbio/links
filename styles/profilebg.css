@@ -1,0 +1,104 @@
+
+        #profilebody {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+				
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			
+        }
+		#description{
+			display:none;
+		}
+
+        .profile-container {
+				width: 100%;
+				max-width: 400px;
+				
+				border-radius: 10px;
+				overflow: hidden;
+	
+        }
+
+        /* Background image */
+			.profile-header {
+				width: 100%;
+				height: 200px;
+				background-image: url('./images/backgroundpg.jpg');
+				background-size: cover;
+				background-position: center;
+				position: relative;
+        }
+
+        /* Profile Picture */
+        .profile-picture {
+				width: 125px;
+				height: 125px;
+				border-radius: 50%;
+				border: 5px solid #E1306C;
+				background-image: url('./images/mark.jpg');
+				background-size: cover;
+				background-position: center;
+				position: absolute;
+				bottom: -58px;
+				left: 50%;
+				transform: translateX(-50%);
+        }
+
+        /* Profile details */
+        .profile-details {
+				padding: 60px 20px 20px;
+				text-align: center;
+        }
+
+			   /* Profile details with stylish fonts and bold look */
+		.profile-details h2 {
+			font-size: 26px;             /* Increase font size for the name */
+			font-weight: 700;            /* Make the font bolder */
+			letter-spacing: 1.5px;       /* Add spacing between the letters */
+			               /* Dark color for the name */
+			font-family: 'Poppins', sans-serif;  /* Stylish font */
+			text-transform: uppercase;   /* Make text all uppercase */
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);  /* Add a slight shadow */
+		}
+
+		.profile-details p {
+			font-size: 18px;             /* Slightly larger font size for bio */
+			font-weight: 400;            /* Keep bio slightly lighter than name */
+			letter-spacing: 0.5px;       /* A bit of spacing between letters */
+			                /* Softer color for the bio */
+			font-family: 'Roboto', sans-serif;  /* Modern, readable font */
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+		}
+
+		/* Import Google Fonts */
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap');
+
+
+        /* For small screens */
+        @media screen and (max-width: 600px) {
+            .profile-container {
+                max-width: 100%;
+            }
+
+            .profile-header {
+                height: 150px;
+            }
+
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+                bottom: -40px;
+            }
+
+            .profile-details h2 {
+                font-size: 18px;
+            }
+
+            .profile-details p {
+                font-size: 14px;
+            }
+        }

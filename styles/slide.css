@@ -1,0 +1,109 @@
+     
+        #sliderBody {
+			box-sizing: border-box;
+            margin: 50px auto 50px auto;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         /*   height: 55vh; */
+        
+        }
+
+        .slider-container {
+            width: 80%;
+            max-width: 400px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .slider img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        /* Add some shadow and animation to the images */
+        .slider img:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Navigation Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);     
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+		html, body {
+			overflow: visible; /* Or scroll */
+			height: auto;       /* Remove any height restrictions */
+		}
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Dot indicators */
+      /* Dot indicators */
+.dots {
+    display: flex;
+    justify-content: center;  /* Center the dots horizontally */
+    align-items: center;      /* Align dots to the center vertically */
+    margin-top: 10px;
+    gap: 10px;                /* Space between the dots */
+    width: 100%;              /* Full width to make it take a new line */
+    flex-direction: row;      /* Ensure dots are in a horizontal line */
+}
+
+
+        .dots button {
+            border: none;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dots button.active {
+            background-color: #717171;
+        }
+
+        /* Autoplay Animations */
+        .autoplay {
+            animation: slideShow 8s infinite;
+        }
+
+        /* Keyframes for fade effect */
+        @keyframes slideShow {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }

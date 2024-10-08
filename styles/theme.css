@@ -1,0 +1,77 @@
+   /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        /* Light Theme */
+        body.light-theme {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        /* Dark Theme */
+        body.dark-theme {
+            background-color: #121212;
+            color: #fff;
+        }
+		.testimonialsBorder{
+			color:black;
+			
+		}
+        /* Toggle Switch Styles */
+        .toggle-container {
+            position: relative;
+            width: 60px;
+            height: 30px;
+        }
+
+        .toggle-switch {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.4s ease;
+        }
+
+        .toggle-label:before {
+            content: "";
+            position: absolute;
+            height: 26px;
+            width: 26px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.4s ease;
+        }
+
+        /* When the switch is toggled */
+        .toggle-switch:checked + .toggle-label {
+            background-color: #4caf50;
+        }
+
+        .toggle-switch:checked + .toggle-label:before {
+            transform: translateX(30px);
+        }
+
+        .toggle-state {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
