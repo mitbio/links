@@ -145,8 +145,8 @@ body {
 				margin: 0 auto;
 			}
 
-			.content h2 {
-				text-align: left;
+			.testimonials h2 {
+				text-align: center;
 				font-size: 24px;
 				margin-bottom: 20px;
 			}
@@ -167,11 +167,11 @@ body {
 				margin-right: 15px;
 			}
 
-			.content {
+			.content2 {
 				flex: 1;
 			}
 
-			.content h3 {
+			.content2 h3 {
 				margin: 0;
 				font-size: 18px;
 			}
